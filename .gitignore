@@ -1,0 +1,33 @@
+# Build and validation artifacts
+build/
+build-*/
+out/
+install/
+install-*/
+cmake-build-*/
+CMakeUserPresets.json
+CMakeFiles/
+Testing/
+
+# Toolchain and editor noise
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+
+# Local validation scratch space
+_scratch/
+_scratch-*/
+*.co.tmp
+*.part
+
+# Benchmark, hardening and crash-test residue
+bench-out/
+crash-out/
+hardening-out/
+downstream-out/

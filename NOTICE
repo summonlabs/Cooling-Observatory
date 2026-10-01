@@ -1,0 +1,24 @@
+Cooling Observatory
+Copyright 2026 Summon Software Labs.
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Cooling Observatory is part of Data Center Control Plane (DCCP). It owns
+observation, explanation, historical inspection, constraint localisation and
+divergence analysis for cooling delivery, and owns no actuator, no topology, no
+capacity ledger and no incident state.
+
+Third-party notices
+-------------------
+
+This product includes no third-party source code and links no third-party
+libraries. It is implemented against the C++20 standard library and the operating
+system interfaces it needs for durable atomic file replacement, advisory file
+locking and process handling.
+
+The canonical serialization format, the integrity checks (CRC-32C and SHA-256,
+FIPS 180-4) and every identity, generation, epoch, revision and ordinal type are
+implemented in this repository.
+
+No telemetry is transmitted by this software. It makes no network connections and
+sends nothing anywhere.

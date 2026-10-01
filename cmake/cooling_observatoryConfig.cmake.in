@@ -1,0 +1,32 @@
+@PACKAGE_INIT@
+
+# Cooling Observatory - DCCP cooling infrastructure observation.
+#
+# Exported target:
+#   dccp::cooling_observatory       C++20 library
+#
+# Example:
+#   find_package(cooling_observatory 1.0 REQUIRED)
+#   target_link_libraries(app PRIVATE dccp::cooling_observatory)
+#
+# The installed package is self-contained: it depends on no other package and
+# exports no target from any adjacent authority. Composition with Cooling
+# Topology, Cooling Capacity Accounting, Thermal Observatory and the adjacent
+# DCCP runtimes happens through this library's public headers and through
+# generation-stamped external references carried as data.
+
+include(CMakeFindDependencyMacro)
+
+include("${CMAKE_CURRENT_LIST_DIR}/cooling_observatoryTargets.cmake")
+
+set(COOLING_OBSERVATORY_LIBRARIES dccp::cooling_observatory)
+set(COOLING_OBSERVATORY_INCLUDE_DIRS "${PACKAGE_PREFIX_DIR}/@CMAKE_INSTALL_INCLUDEDIR@")
+
+if(NOT TARGET dccp::cooling_observatory)
+  set(cooling_observatory_FOUND FALSE)
+  set(cooling_observatory_NOT_FOUND_MESSAGE
+      "the cooling_observatory export set did not provide dccp::cooling_observatory")
+  return()
+endif()
+
+check_required_components(cooling_observatory)
