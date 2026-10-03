@@ -75,8 +75,6 @@ A change that adds a first-party warning is not ready.
   and a breach is a reported outcome, not a truncation.
 - **Deterministic output.** Every collection that reaches an answer is sorted by a
   total order, and rendering has one spelling per value.
-- **No test timeouts.** A hang is a defect to diagnose. Do not add a timeout to
-  make a suite pass.
 
 ## Tests
 
