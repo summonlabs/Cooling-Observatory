@@ -1,7 +1,6 @@
 # Cooling Observatory
 
-Cooling delivery observation, constraint localisation and divergence analysis for
-the Data Center Control Plane (DCCP).
+Cooling delivery observation, constraint localisation and divergence analysis.
 
 Cooling Observatory answers one question about a data-centre cooling plant, from
 evidence it did not produce:
